@@ -1,18 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation'
-import Home from './src/layouts/home';
+import SearchScreen from './src/layouts/searchScreen';
+
 
 
 
 const navigation = createStackNavigator({
-  Home: Home
+  Search: SearchScreen,
 }, {
-  initialRouteName: 'Home',
+  initialRouteName: 'Search',
   defaultNavigationOptions: {
-    title: 'Home'
+    title: 'Restaurent Search'
   }
 })
 
